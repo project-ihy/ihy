@@ -1,5 +1,7 @@
-(ns eme-ene.generation.melody-generation
-  (:require [eme-ene.analyzer :as a]
+(ns eme-ene.generation.melody
+  (:require [taoensso.timbre :refer  [debug]]
+            [eme-ene.analyzer :as a]
+            [eme-ene.util.pitch :as pu]
             [eme-ene.util.constants :refer :all]
             [eme-ene.util.util :as util]))
 
@@ -25,11 +27,6 @@
       (inc $)
       (float (/ $ (count strength-ordering))))))
 
-(defn smoothness-filter
-  [mel range index dur pulse note]
-  (let [new-index (a/smoothness-index (conj mel {:dur dur :pitch note}) pulse)]
-    (and (>= new-index (- index range)) (<= new-index (+ index range)))))
-
 (defn notes-in-range-and-key
   [config]
   (let [{:keys [tonic mode floor ceiling]} config
@@ -42,8 +39,13 @@
         below-notes (filter #(<= (- tonic floor) %)
                             (for [interval intervals
                                   octave (range (Math/ceil (/ floor 12)))]
-                              (- tonic (+ octave interval))))]
-    (set (concat above-notes below-notes))))
+                              (- tonic (+ octave (- 12 interval)))))]
+    (set (map pu/pitch-map-for-midi (concat above-notes below-notes)))))
+
+(defn smoothness-filter
+  [mel range index dur pulse note]
+  (let [new-index (a/smoothness-index (conj mel {:dur dur :pitch note}) pulse)]
+    (and (>= new-index (- index range)) (<= new-index (+ index range)))))
 
 (defn notes-in-smoothness-range
   [config notes mel dur]
@@ -54,6 +56,8 @@
         ;;rate at which we decrease the range
         ;;for two, and I'm not sure on this one; but I think that this method will result in a bias towards
         ;;higher leaps at the beginning of the melody, and lower leaps/steps towards the end
+        ;;I actually don't think the above is true upon reconsideration. We're reducing the range, not the
+        ;;index itself
 
         smoothness-range (case mel-completeness
                            0.0 smoothness-index
@@ -68,12 +72,12 @@
         notes-in-range-and-key (notes-in-range-and-key config)
         avail-notes (cond
                       (empty? mel)
-                      #{tonic}
+                      #{(pu/pitch-map-for-midi tonic)}
 
                       :else
-                      (notes-in-smoothness-range config notes-in-range-and-key mel dur))]
-    (rand-nth (into [] avail-notes))))
-
+                      (notes-in-smoothness-range config notes-in-range-and-key mel dur))
+        midi-note (rand-nth (into [] avail-notes))]
+    midi-note))
 
 ;;ex config
 {:mode :ionian
@@ -81,9 +85,7 @@
  ;;relative to the tonic, if tonic is c4 and floor is 6, no notes lower than f#3(?) will be played
  :floor 12
  :ceiling 12
-
  :smoothness-index 6.0
-
  :len-beats 4.0
  ;;The generator will only place notes as fine as the `beat-granularity` is specified.
  :beat-granularity :s
@@ -104,7 +106,6 @@
 
        :else
        (let [remainder (- len-beats cur-beat)
-             ;; _ (prn remainder)
              ;;hey this needs to change so that triplets can work
              dur (rand-nth (filter #(>= remainder (float (/ (nice-names->note-values %)
                                                             (nice-names->note-values pulse))))

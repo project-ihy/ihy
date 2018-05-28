@@ -7,10 +7,9 @@
 ;;variability - total note length traveled / cantus length
 ;;climax placement
 
-
 (defn distance-traveled
   ([mel]
-   (distance-traveled (mapv :pitch mel) 0))
+   (distance-traveled (mapv (comp :midi :pitch) mel) 0))
   ([[first-note second-note :as mel] total]
    (if second-note
      (recur (rest mel) (+ total (Math/abs (- first-note second-note))))

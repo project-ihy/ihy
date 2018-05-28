@@ -3,6 +3,7 @@
             [overtone.music.time :as t]
             [overtone.music.rhythm :as r]
             [overtone.at-at :as at-at]
+            [eme-ene.util.util :as util]
             [eme-ene.util.chance :as cu]
             [eme-ene.midi :as midi]
             [eme-ene.util.constants :refer :all]))
@@ -53,7 +54,7 @@
 
         ;;however, we need to consider that inst-fns might not always expect a midi note, maybe they
         ;;expect a freq. I think this is ok for now though
-        midi-note (p/note pitch)
+        midi-note (:midi pitch)
         ;;this is so ugly but idgaf
         dur-to-pulse (float (/ (dur nice-names->note-values)
                                (pulse nice-names->note-values)))
@@ -105,51 +106,51 @@
 (defn play-tracks
   [tracklist]
   (r/metro-start (:metronome player-state) 0)
+  (util/spy tracklist)
   (doseq [track tracklist]
     (play-track player-state track)))
 
-(def live-player-state
-  {:playing? (atom true)
-   :step-skip-pct midi/step-skip-pct
-   :up-down-pct midi/up-down-pct
-   :nome (r/metronome 120)
-   :pattern (cycle [:e :e :q])
-   :pulse :q
-   :inst-fn (:piano midi/inst-fns)})
+;; (def live-player-state
+;;   {:playing? (atom true)
+;;    :step-skip-pct midi/step-skip-pct
+;;    :up-down-pct midi/up-down-pct
+;;    :nome (r/metronome 120)
+;;    :pattern (cycle [:e :e :q])
+;;    :pulse :q
+;;    :inst-fn (:piano midi/inst-fns)})
 
+;; (defn change-skip-pct
+;;   [amount]
+;;   (swap! (:step-skip-pct live-player-state) + amount)
+;;   (prn @(:step-skip-pct live-player-state)))
 
-(defn change-skip-pct
-  [amount]
-  (swap! (:step-skip-pct live-player-state) + amount)
-  (prn @(:step-skip-pct live-player-state)))
+;; (defn pause!
+;;   []
+;;   (reset! (:playing? live-player-state) false))
 
-(defn pause!
-  []
-  (reset! (:playing? live-player-state) false))
+;; ;;should add support for staying within the pitch
+;; ;;further, could have another controller that can adjust how close to the key the possible notes are
 
-;;should add support for staying within the pitch
-;;further, could have another controller that can adjust how close to the key the possible notes are
+;; (defn next-pitch
+;;   [last-note step-skip-pct up-down-pct]
+;;   (prn step-skip-pct)
+;;   (prn up-down-pct)
+;;   ;;if pct is 0, we should always step, if it's 1, always leap
+;;   (let [step-or-leap (cu/weighted-choose {:step (- 1 step-skip-pct) :leap step-skip-pct})
+;;         up-or-down (cu/weighted-choose {1 up-down-pct -1 (- 1 up-down-pct)})
+;;         interval (* up-or-down (rand-nth (step-or-leap {:step [0 2] :leap [3 4 5 6 7]})))]
+;;     (+ last-note interval)))
 
-(defn next-pitch
-  [last-note step-skip-pct up-down-pct]
-  (prn step-skip-pct)
-  (prn up-down-pct)
-  ;;if pct is 0, we should always step, if it's 1, always leap
-  (let [step-or-leap (cu/weighted-choose {:step (- 1 step-skip-pct) :leap step-skip-pct})
-        up-or-down (cu/weighted-choose {1 up-down-pct -1 (- 1 up-down-pct)})
-        interval (* up-or-down (rand-nth (step-or-leap {:step [0 2] :leap [3 4 5 6 7]})))]
-    (+ last-note interval)))
-
-(defn live-player
-  [beat last-note state]
-  (let [{:keys [playing? step-skip-pct nome pattern pulse inst-fn up-down-pct]} state
-        dur (first pattern)
-        dur-to-pulse (float (/ (dur nice-names->note-values)
-                               (pulse nice-names->note-values)))
-        real-dur (real-dur dur pulse nome)
-        next-beat (+ beat dur-to-pulse)
-        next-pitch (next-pitch last-note @step-skip-pct @up-down-pct)]
-    (when @playing?
-      (at-at/at (nome beat) #(inst-fn next-pitch real-dur) pool)
-      (t/apply-by (nome next-beat) #'live-player
-                  [next-beat next-pitch (update state :pattern rest)]))))
+;; (defn live-player
+;;   [beat last-note state]
+;;   (let [{:keys [playing? step-skip-pct nome pattern pulse inst-fn up-down-pct]} state
+;;         dur (first pattern)
+;;         dur-to-pulse (float (/ (dur nice-names->note-values)
+;;                                (pulse nice-names->note-values)))
+;;         real-dur (real-dur dur pulse nome)
+;;         next-beat (+ beat dur-to-pulse)
+;;         next-pitch (next-pitch last-note @step-skip-pct @up-down-pct)]
+;;     (when @playing?
+;;       (at-at/at (nome beat) #(inst-fn next-pitch real-dur) pool)
+;;       (t/apply-by (nome next-beat) #'live-player
+;;                   [next-beat next-pitch (update state :pattern rest)]))))

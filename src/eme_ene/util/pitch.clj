@@ -1,7 +1,8 @@
 (ns eme-ene.util.pitch
   (:require [overtone.music.pitch :as pitch]
             [overtone.algo.lists :as lists]
-            [cmmge.util :as util]))
+            [eme-ene.util.constants :refer :all]
+            [eme-ene.util.util :as util]))
 
 (def circle-of-fifths
   [:c :g :d :a :e :b :f# :db :ab :eb :bb :f])
@@ -53,3 +54,12 @@
     (pos? shift) (recur (inc-first notes 12) (dec shift))
     (neg? shift) (recur (util/spy (dec-last notes 12)) (inc shift))
     (zero? shift) notes))
+
+(defn pitch-map-for-midi
+  [midi]
+  (get (util/index-by :midi pitches) midi))
+
+(defn plus-pitch
+  [args]
+  (let [midi-note (reduce #(+ (or (:midi %) %) (or (:midi %2) %2)) 0 args)]
+    (pitch-map-for-midi midi-note)))
