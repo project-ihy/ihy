@@ -5,8 +5,11 @@ Tool for algorithmically generating music.
 ## Members
 
 Braden Arestides - arestibp@mail.uc.edu
+
 Grace Gamstetter - gamstegl@mail.uc.edu
+
 Eric Henggeler - henggeew@mail.uc.edu
+
 Thadeus Ross - rosstu@mail.uc.edu
 
 ## Faculty Advisor
@@ -23,7 +26,9 @@ Composing new and original music is a challenging and time-consuming task for mo
 
 ## Inadequacy of Current Solutions
 
-Current music generators are either difficult for use or require extensive music theory knowledge before use. They also don't use melodies that a user previously generated, but instead create something from scratch. This project will act more as a collaborator to the user than as the sole means for musical prodcution which can be used by both beginners and experts.
+Current music generators are either difficult for use or require extensive music theory knowledge before use. They also don't use melodies that a user previously generated, but instead create something from scratch.
+
+This project will act more as a collaborator to the user than as the sole means for musical prodcution which can be used by both beginners and experts.
 
 ## Background Skills
 
