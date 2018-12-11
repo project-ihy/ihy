@@ -1,0 +1,3 @@
+# Project Ihy Abstract
+
+The world is full of creative and talented musicians, but many of them don’t have the full skillset of creating a full composition on their own. Ihy is a music synthesizing tool which will create harmonizing pieces to complement a user-provided musical melody. It is a plugin for the popular tool called MuseScore, an open-sourced platform for creating scores for many different instruments and genres of music. Ihy will assist composers by eliminating tedious composing sessions for background pieces and allow them to focus more on the most important aspects of a musical score.
