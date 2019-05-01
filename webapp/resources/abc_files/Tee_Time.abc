@@ -1,0 +1,170 @@
+X:1
+T:Tee Time
+C:Vulfpeck
+%%score { ( 1 2 ) | ( 3 4 ) }
+L:1/8
+M:4/4
+I:linebreak $
+K:Gb
+V:1 treble nm="Piano" snm="Pno."
+V:2 treble 
+V:3 bass 
+V:4 bass 
+V:1
+ !>![G,CE]/- |[Q:1/4=140] [G,CE].[A,DF] z .[A,DF] .[B,DG].[A,DF] .[G,CE].D/!>![G,CE]/- | %2
+ [G,CE][A,DF] z .[A,DF] .[B,DG].[A,DF] .[B,DG].[A,DF]/!>![A,DG]/- | %3
+ [A,DG].[=CEA] z .[CEA] .[DGB].[CEA] .[B,DG].F/!>![B,DG]/- |$ %4
+ [B,DG].[A,DF].[B,DG].[A,DF] .[B,DG]/.F/ z/ !>!.[G,CE]/ z/ !>!.[G,CF]/ z/ !>![G,CE]/- | %5
+ [G,CE]"_more legato".[A,DF] z .[A,DF] .[B,DG].[A,DF] .[G,CE].D/[G,CE]/- | %6
+ [G,CE][A,DF] z .[A,DF] .[B,DG].[A,DF] .[B,DG].[A,DF]/!>![A,DG]/- |$ %7
+ [A,DG][=CEA] z [CEA] [DGB][CEA] [B,DG][A,DF]/!>![B,DG]/- | %8
+ [B,DG][A,DF][B,DG][A,DF] [B,DG]/F[G,CE]/- [G,CE]/[G,CF]/ z/ !>![G,CE]/- | %9
+ [G,CE].[A,DF] z/ .[A,DF]/ z/ [CDG]/- [CDG].[CDG] z/ .[CDG]/ z/ [CDEG]/- |$ %10
+ [CDEG].[CDEG] z/ .[CDEG]/ z/ [CDEG]/- [CDEG].[CDEG] z/ .[G,CE]/ z/ [G,CE]/- | %11
+ [G,CE].[A,DF] z/ .[A,DF]/ z/ [CDG]/- [CDG].[CDG] z/ .[CDG]/ z/ [A,B,E]/- |$ %12
+ [A,B,E].[A,B,E].[A,B,E].[A,B,E] .[=G,B,E].[G,B,E] [G,-B,-=D]/[G,B,_D][_G,CE]/- | %13
+ [G,CE].[G,CE] z/ .[G,CE]/ z/ [G,A,D]/- [G,A,D].[G,A,D] z .[G,A,D] | %14
+ .[G,CDE] z .[G,CDE] z [=CEG__B] z [CEGB]>[DG_B]- |$ %15
+ [DGB][DGB] [=DFAc]>[_DGB]- [DGB]>.[=G,CE] z/ .[G,CE]/ z/ [_G,CE]/- | %16
+ [G,CE].[G,CE].[G,A,D].[G,A,D] [G,CDE] z [=CEG__B]>[DG_B]- |$ %17
+ [DGB].[DGB] .[=DFA]/.[DFA]/ z/ [B,_DG]/- [B,DG] z/ !>![=G,CE]/- [G,CE]/!>![G,CE]!>![_G,CE]/- | %18
+ [G,CE] z [G,A,D] z [G,CDE] z [=CEG__B] z/ [DG_B]/- |$ %19
+ [DGB].[DGB].[Dd].[Ee] .[Gg].[Ee] [__B,__B]/.[A,A]/ z/ !>![G,G]/- | %20
+ [G,G].[A,A][G,A,D] z [CDEG] z [=CEG__B] z/ [DG_B]/- | %21
+ [DGB].[DGB].[Ee].[Gg] .[Ee].[Dd] [__B,__B]/.[A,A]/ z/ !>![G,G]/- |$ %22
+ [G,G].[A,A][G,A,D] z [CDEG] z [=CEG__B] z | [DGB] z [=DFA] z/ [B,_DG]/ z !>![_FG__B]- [FGB]2 | %24
+ [G,CE] z [G,A,D]>[G,CE]- [G,CE].[G,CE] .[=CEG__B]2 |$ %25
+ [DGB] z .[=DFA]>[B,_DG]- [B,DG] z/ !>![G,CE]/- [G,CE]/!>![G,CE]!>![G,CE]/- | %26
+ [G,CE].[A,CE].[G,CE].[A,CE] .[__B,CE]/.[A,CE]/ z/ .[G,CE]/ z/ .[A,CE]/ z/ [__B,CEF]/- |$ %27
+ [B,CEF].[__B,CEF] .[B,CEF]/.[B,CEF]/ z/ .[B,CEF]/ z/ .[B,CEG]/ z/ .[B,CEF]/ z/ .[B,CE]/ z/ [G,_B,E]/- | %28
+ [G,B,E].[G,B,D] [G,B,D]/.E/ z/ [G,B,D]/- [G,B,D].[G,B,D] [G,B,E]/.G/ z/ [=A,=D=EA]/- |$ %29
+ [A,DEA].[=A,=D=EA] .[A,DEA]/.[A,DEA]/ z/ .[_A,DEA]/ z/ .[A,DEA]/ z/ .[A,DEA]/ z/ .[B,B]/ z/ [B,_EG]/- | %30
+ [B,EG].[A,EG].[G,EG].[A,EG] .[B,EG]/.[A,EG]/ z/ .[G,EG]/ z/ .[A,EG]/ z/ [G,C__E]/- |$ %31
+ [G,CE].[A,C__E] .[G,CE].A,/!>!G,/- G,/!>![G,G]/ z/ !>![A,A]/ z/ !>![=A,=A]/ z/ !>![DGB]/- | %32
+ [DGB].[EGB] [DGB]/.E/ z/ [DGB]/- [DGB].[B,B] .[Cc]/.[Dd]/ z/ [E=G=Be]/- |$ %33
+ [EGBe].[E=G=Be] .[EGBe]/.[EGBe]/ z/ [EG_Be]/- [EGBe].[EGBe] .[Dd]/.[Ee]/ z/ [_Gg]/- | %34
+ [Gg].[A,CE] [G,CE]/.A,/ z/ [G,CE]/- [G,CE].[A,CE] .[Aa]/.[Gg]/ z/ [Ff]/- |$ %35
+ [Ff].[G,=A,E] .[G,A,D]/.[G,A,E]/ z/ [G,A,E]/ z/ .[Gg]/ z/ [Ff]/- [Ff]/.[Ee]/ z/ [Ee]/- | %36
+ [Ee][DBd] [Dd]/[Ee][Dd]/- [Dd][DBd] [DGB]/-[DGBd][FAB=d]/- |$ %37
+ [FABd][FAB=d] .[B,=DA]/.G/ z/ [A,B,DF]/- [A,B,DF]/[A,B,DF][=A,DG]/- [A,DG]/.[B,DA]/ z/ [G,_DE]/- | %38
+ [G,DE].[A,DE].[G,DE].[A,DE] .[B,DE]/!>![A,DEG]!>![G,G]/- [G,G]/G,/A,/[G,=B,=DG]/- |$ %39
+ [G,B,DG][A,=B,=DG] [G,B,DG][A,B,DG]/[G,G]/- [G,G]/[G,G][A,A]/- [A,A]/[=A,=A][_DGB]/- | %40
+ [DGB][EGB] [DGB]/E[DGB]/- [DGB]B, [Dd]/[Ee]/ z/ [Ff]/- |$ %41
+ [Ff]/[=A=a]/ z/ [Ff]/ z/ [=E=e]/ z/ [_E_e]/ z/ [Gg]/ z/ [Ff]/ z/ [Ee]/ z/ [Gce]/- | %42
+ [Gce].D .E/.D/ z/ [CEG]/- [CEG]D [EG]/D[B,D]/- |$ %43
+ [B,D][B,E] [B,D]/[B,E][B,DG]/- [B,DG][G,G] .[A,A]/.[B,B]/ z/ [CEGc]/- | %44
+ [CEGc]2 [DGB]3/2{/=G}.[DFA]/ z2 z3/2 !tenuto![A,C=E]/- | %45
+ [A,CE].[G,B,D]!tenuto![F,A,D].[G,B,] .[F,A,D] z .A.B |$ %46
+ !tenuto!.[CEGc]2 [DGB]3/2{/=G}.[DFA]/ z2 z3/2 !tenuto![A,C=E]/- | %47
+ [A,CE].[G,B,D]!tenuto![F,A,D]!tenuto![G,B,] .[F,A,D] z z2 | %48
+ !>![EAc]2 [DGB]3/2{/=G}[DFA]/ z2 z3/2 !tenuto![A,C=E]/- |$ %49
+ [A,CE].[G,B,D]!tenuto![F,A,D][G,B,] .[F,A,D] z z2 | [CEG]2 [DGB]2{/=G} [DFA]2 [CE_G]2 | %51
+{/=E} [A,DF]2 [A,C_E]2 [F,A,D] z [=E,=G,=C] z/ [_G,_CE]/- |$ %52
+ [G,CE].A, .G,/.A,/ z/ [A,DG]/- [A,DG].[B,DG] .A,/.B,/ z/ [CDEG]/- | %53
+ [CDEG].[CDEG] z/ .[CDEG]/ z/ [CDEG]/- [CDEG].[CDEG] z/ .[CDEG]/ z/ [G,CE]/- |$ %54
+ [G,CE].[A,DF] .G,/.A,/ z/ [A,DG]/- [A,DG].[B,DG] .A,/.B,/ z/ [CDEG]/- | %55
+ [CDEG].[CDEG] z/ .[CDEG]/ z/ [CDEG]/- [CDEG].[CDEG].[=CG=A].[_CF_A] |$ %56
+ [G,CE] z [G,CE]>[A,DG]- [A,DG][A,DG]- [A,DG]/.[A,DG]/ z/ [G,CE]/- | %57
+ [G,CE].[G,CE] .[G,CE]/.[G,CE]/ z/ [=CEG__B]/- [CEGB].[CEGB] .[CEGB]/.[CEGB]/ z/ [DG_B]/- |$ %58
+ [DGB].[DGB] .[=DFAc]/.[DFAc]/ z/ [_DGB]/- [DGB] z/ .[=G,CE]/ z/ .[G,CE]/ z/ [_G,CE]/- | %59
+ [G,CE].[G,CE] .[G,A,D]/.[G,A,D]/ z/ [G,CE]/- [G,CE].[G,CE] .[=CEG__B]/.[CEGB]/ z/ [DG_B]/- |$ %60
+ [DGB].[DGB] .[Dd]/.[Ee]/ z/ !>![Gg]/- [Gg].[Ee] .[__B,__B]/.[A,A]/ z/ !>![G,G]/- | %61
+ [G,G].[A,A] .[G,A,D]/.[G,A,D]/ z/ [G,CE]/- [G,CE].[G,CE] .[=CEG__B]/.[CEGB]/ z/ [DG_B]/- |$ %62
+ [DGB].[DGB] .[Dd]/.[Ee]/ z/ .[Gg]/ z/ .[__B__b]/ z/ .[Aa]/ z/ .[Gg]/ z/ !>![Gg]/- | %63
+ [Gg].A .[G,A,D]/.[G,A,D]/ z/ [G,CE]/- [G,CE].[G,CE] .[=CEG__B]/.[CEGB]/ z/ [DG_B]/- |$ %64
+ [DGB].[DGB] .[Dd]/.[Ee]/ z/ !>![Gg]/- [Gg].[Ee] .[__B,__B]/.[A,A]/ z/ [G,G]/- | %65
+ [G,G].[A,A] .[G,A,D]/.[G,A,D]/ z/ [G,CE]/- [G,CE].[G,CE] .[=CEG__B]/.[CEGB]/ z/ [DG_B]/- |$ %66
+ [DGB].[DGB] .[Ee]/.[Gg]/ z/ !>![Ee]/- [Ee].[Dd] .[__B,__B]/.[A,A]/ z/ [G,G]/- | %67
+ [G,G].[A,A] .[G,A,D]/.[G,A,D]/ z/ [G,CE]/- [G,CE].[G,CE] .[=CEG__B]/.[CEGB]/ z/ [DG_B]/- |$ %68
+ [DGB].[DGB] .[=DFA]/.[DFA]/ z/ .[B,_DG]/ z !>![D=EG__B]- [DEGB]2 | %69
+ .[G,CE] z [G,A,D] z/ [G,CE]/- [G,CE].[G,CE][=CEG__B] z |$ %70
+ [DGB] z .[=DFA] z/ .[B,_DG]/ z/ =G,/-.[G,CE]/.[G,CE]/ z/ .[G,CE]/ z/ [_G,CE]/- | %71
+ [G,CE] z [G,A,D] z .[G,CE] z .[=CEG__B] z |$ %72
+ z{/=A} [D-G-B][DGc].[DGB] .[CE_A].[CEG] .ED/[G,CE]/- | %73
+ [G,CE].[G,CE] .[G,A,D]/ z3/2 .[G,CE]/ z3/2 z .[=CEG__B]/ z/ | %74
+ !>!.[=CEG__B][DG_B]=d[cdf] [Be]_d=Gd |$ .[EAc] z{/=A} [DGB] z .[EG] z .E z/ .G/ | %76
+ z .A.=A.B{/F} .G.D.[=CG].[_CG] |{/=A,} .[B,G] z .G, z z [G,B,D][G,C][B,D] |$ %78
+ z [G,B,D][B,E][=A,D_F] _A,[B,D] z3/2 G,/- | G,.A,.[G,B,D] z .[G,CE] z !>![=CEG__B]>[DG_B]- | %80
+ [DGB].[DF=A] .[=DF_A]/.d/ z/ [_DEGB]/- [DEGB].[DG] .[CE]/.[CG]/ z/ [CEA]/- |$ %81
+ [CEA].[B,DG].E.G .[CEG] z [=CEG__B]>[DG_B]- | %82
+ [D-GB][D=A] [=DF_A]/d[_DEGB]/- [DEGB][DEGB] .[Ee]/.[Gg]/ z/ [Gg]/- | %83
+ [Gg].[Ee] .[__B,__B]/.[A,A]/ z/ [G,G]/- [G,G].[A,A].[A,DG] z |$ %84
+ .[CEG] z .[=CEG__B] z .[EG] z [=G,_CE]>[_G,CE]- | [G,CE][G,CE][A,DG] z .[G,CE] z [=CEG__B] z | %86
+ [DGB] z .[=DFA]d .[_DEGB][DG][CE]!tenuto!G- |$ G2 G.[B,D] GE.G.D | .G.E.G.D .G.E G/G/.D | %89
+ .G.E.G.D .G.E.G.D |$ .G.E =A/B/.c .=c.d.g._c |{/=A} .B.G z .[E_A]{/=A} [DGB] z .[EG__B] z | %92
+ [DGB] z [=DFA]2 [B,EG]2 [=G,CE]2 |$ [G,CEG]2 [G,A,DG]2 [G,CEG]2 [=CEG__B]2 | %94
+ [DGB]2 [=DFAc]f [Bdg]b=ge'- | e'8 |] %96
+V:2
+ x/ | x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 |$ x8 | %18
+ x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | %36
+ x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 |$ %54
+ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ %72
+ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ z .[CE] x6 | x8 | %89
+ x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |] %96
+V:3
+ z/ | [A,,,A,,] z [A,,,A,,] z [A,,,A,,] z [A,,,A,,] z | %2
+ !tenuto![A,,,A,,] z [A,,,A,,] z [A,,,A,,][=C,,=C,][D,,D,][=D,,=D,] | %3
+ !tenuto![E,,E,] z [E,,E,] z [E,,E,] z [E,,E,] z |$ %4
+ !tenuto![E,,E,] z [E,,E,] z [E,,E,]!>![G,,,G,,]!>![=G,,,=G,,]!>![A,,,A,,] | %5
+ [A,,,A,,] z [A,,,A,,] z [A,,,A,,] z [A,,,A,,] z | %6
+ [A,,,A,,] z [A,,,A,,] z [A,,,A,,][=C,,=C,][D,,D,][=D,,=D,] |$ %7
+ [E,,E,]2 [E,,E,]2 [E,,E,]2 [E,,E,]2 | [E,,E,]2 [E,,E,]2 [E,,E,][G,,,G,,][=G,,,=G,,][A,,,A,,] | %9
+ [A,,,A,,] z [A,,,A,,] z [B,,,B,,] z [B,,,B,,] z |$ %10
+ [C,,C,] z [C,,C,] z [C,,C,] z [B,,,B,,][=A,,,=A,,] | %11
+ [A,,,A,,] z [A,,,A,,] z [B,,,B,,] z [B,,,B,,] z |$ [E,,E,] z [E,,E,] z [E,,E,] z [E,,E,] z | %13
+ [A,,,A,,] z [A,,,A,,] z [B,,,B,,] z [B,,,B,,] z | .[C,,C,] z C,,C, =C,,=C,C,,C, |$ %15
+ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | %18
+ A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, | %21
+ D,,D,=D,,=D, E,,E,=G,,,=G,, |$ A,,,A,,B,,,B,, C,,C,=C,,=C, | %23
+ D,,D, =D,,=D,/E,,/- E,,!>![G,,G,]-[G,,G,]G,, | [A,,,A,,] z [B,,,B,,]>[C,,C,]- [C,,C,]C, =C,,2 |$ %25
+ D,,2 =D,,>E,,- E,, z =G,,, z | %26
+ .[A,,,A,,]/.[A,,,A,,].[A,,,A,,]/ z/ .[A,,,A,,]/ z/ .[A,,,A,,]/ z .[A,,,A,,].[A,,,A,,].[A,,,A,,] |$ %27
+ .[=A,,,=A,,]/.[A,,,A,,]/ z/ .[A,,,A,,]/ z .[A,,,A,,] .[A,,,A,,].[A,,,A,,].[A,,,A,,].[A,,,A,,] | %28
+ .[B,,,B,,]/.[B,,,B,,]/ z/ .[B,,,B,,]/ z .[B,,,B,,]/ z/ .[B,,,B,,]/.[B,,,B,,]/ z/ .[B,,,B,,]/ z .[B,,,B,,]/ z/ |$ %29
+ .[G,,,G,,]/.[G,,,G,,]/ z/ .[G,,,G,,]/ z .[G,,,G,,]/ z/ .[G,,,G,,].[A,,,A,,].[B,,,B,,].[B,,,B,,] | %30
+ .[C,,C,]/.[C,,C,]/ z/ .[C,,C,]/ z/ .[C,,C,]/ z/ .[C,,C,]/ z .[C,,C,].[C,,C,].[C,,C,] |$ %31
+ .[_F,,,_F,,]/.[F,,,F,,]/ z/ .[F,,,F,,]/ z/ .[F,,,F,,]/ z .[F,,,F,,].[F,,,F,,].[F,,,F,,].[F,,,F,,] | %32
+ .[G,,,G,,]/.[G,,,G,,]/ z/ .[G,,,G,,]/ z .[G,,,G,,]/ z/ .[G,,,G,,]/.[G,,,G,,]/ z/ .[G,,,G,,]/ z .[G,,,G,,]/ z/ |$ %33
+ .[E,,E,]/.[E,,E,]/ z/ .[E,,E,]/ z .[E,,E,]/ z/ .[E,,E,]/.[E,,E,]/ z/ .[E,,E,]/ z .[E,,E,]/ z/ | %34
+ .[A,,,A,,]/.[A,,,A,,]/ z/ .[A,,,A,,]/ z .[A,,,A,,]/ z/ .[A,,,A,,]/.[A,,,A,,]/ z/ .[A,,,A,,]/ z .[A,,,A,,]/ z/ |$ %35
+ .[=A,,,=A,,]/.[A,,,A,,]/ z/ .[A,,,A,,]/ z [A,,,A,,] [A,,,A,,][F,,,F,,][=G,,,=G,,][A,,,A,,] | %36
+!ped! [B,,,B,,]/[B,,,B,,][B,,,B,,]/ z [B,,,B,,]/ z/ [B,,,B,,]/[B,,,B,,][B,,,B,,]/ z [B,,,B,,]/!ped-up! z/ |$ %37
+!ped! [B,,B,]/[B,,B,]B,,/!ped-up! z!ped! B,,/ z/ B,,/ z/ B,,/ z/ B,,/!ped-up! z/ .B,,/ z/ | %38
+ .[E,,E,]/.[E,,E,]/ z/ .[E,,E,]/ z/ .[E,,E,]/ z/ .[E,,E,]/ z!ped! [E,,E,][E,,E,]!ped-up! z |$ %39
+!ped! [=D,,=D,]/[D,,D,][D,,D,]/!ped-up!!ped! z/ [D,,D,]/ z!ped-up!!ped! [D,,D,][D,,D,] [D,,D,]!ped-up![D,,D,]/ z/ | %40
+!ped! [_D,,_D,]/[D,,D,][D,,D,]/!ped-up!!ped! z [D,,D,]!ped-up!!ped! [D,,D,]/[D,,D,]/ z/!ped-up! [D,,D,]/ z [D,,D,] |$ %41
+ .[=C,,=C,].[C,,C,].[C,,C,].[C,,C,] !tenuto![=A,,,=A,,].[A,,,A,,]!tenuto![B,,,B,,].[B,,,B,,] | %42
+ .[C,,C,]/.[C,,C,]/ z/ .[C,,C,]/ z [C,,C,] .[C,,C,]/.[C,,C,]/ z/ .[C,,C,]/ z [C,,C,] |$ %43
+!ped! [B,,,B,,]/[B,,,B,,][B,,,B,,]/ z [B,,,B,,] [B,,,B,,]/[B,,,B,,][B,,,B,,]/!ped-up! z [B,,,B,,] | %44
+ !tenuto!.[D,,D,]2 !tenuto!.[D,,D,]2 !tenuto!.D,,2 !tenuto!.D,,2 | %45
+ !tenuto!.[D,,D,]2 !tenuto!.[D,,D,]2 .[D,,D,].[B,,,B,,].[C,,C,].[=C,,=C,] |$ %46
+ !tenuto!.[D,,D,]2 !tenuto!.[D,,D,]2 !tenuto!.D,,2 !tenuto!.D,,2 | %47
+ !tenuto!.[D,,D,]2!ped! [D,,D,]2!ped-up! .[D,,D,].[B,,,B,,].[C,,C,].[=C,,=C,] | %48
+ [D,,D,]2 [D,,D,]2 D,,2 D,,2 |$ D,,2 !tenuto!D,E, .D,.[B,,,B,,].[C,,C,].[=C,,=C,] | %50
+ [D,,D,]2 [D,,D,]2 [D,,D,]2 [D,,D,]2 | [D,,D,]2 [D,,D,]2 [B,,,B,,] z [=A,,,=A,,] z |$ %52
+ A,,,A,,A,,,A,, B,,,B,,B,,,B,, | C,,C,C,,C, C,,C,[B,,,B,,][=A,,,=A,,] |$ %54
+ A,,,A,,A,,,A,, B,,,B,,B,,,B,, | C,,C,C,,C, C,,C,C,,C, |$ A,,,A,,A,,,A,, B,,,B,,B,,,B,, | %57
+ C,,C,C,,C, =C,,=C,C,,C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ %60
+ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | %63
+ A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ %66
+ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ %68
+ D,,D, =D,,=D,/!>!E,,/ z [G,,G,]- [G,,G,]2 | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ %70
+ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | %73
+ A,,,A,,B,,,B,, C,,C,=C,,=C, | D,,D,=D,,=D, E,,E,=G,,,=G,, |$ A,,,A,,B,,,B,, C,,C, =C,,=C,/D,,/- | %76
+ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | %79
+ A,,,A,,B,,,B,, C,,C,=C,,=C, | D,,D,=D,,=D, E,,E,=G,,,=G,, |$ A,,,A,,B,,,B,, C,,C,=C,,=C, | %82
+ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | %85
+ A,,,A,,B,,,B,, C,,C,=C,,=C, | D,,D,=D,,=D, E,,E,=G,,,=G,, |$ A,,,A,,B,,,B,, C,,C,=C,,=C, | %88
+ D,,D,=D,,=D, E,,E,=G,,,=G,, | A,,,A,,B,,,B,, C,,C,=C,,=C, |$ D,,D,=D,,=D, E,,E,=G,,,=G,, | %91
+ A,,,A,,B,,,B,, C,,C,=C,,=C, | D,,D,=D,,=D, E,,2 =G,,,=G,, |$ %93
+!ped! [A,,,A,,]2!ped-up!!ped! [B,,,B,,]2!ped-up!!ped! [C,,C,]2!ped-up!!ped! [=C,,=C,]2!ped-up! | %94
+!ped! [D,,D,]2!ped-up!!ped! [=D,,=D,]2!ped-up!!ped! [E,,E,]2!ped-up!!ped! [=G,,,=G,,]2!ped-up! | %95
+ [A,,,A,,]8 |] %96
+V:4
+ x/ | x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 |$ x8 | %18
+ x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | %36
+ x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x4 D,/ D,/.[G,B,]/D,/ [F,-A,][F,B,]/ z/ | x8 |$ %46
+ x4 D,/ D,/[G,B,]/D,/ [F,-A,][F,B,]/ z/ | x8 | x4 D,/ D,/[G,B,]/D,/ [F,-A,][F,B,]/ z/ |$ x8 | x8 | %51
+ x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | x8 |$ x8 | %69
+ x8 |$ x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |$ %87
+ x8 | x8 | x8 |$ x8 | x8 | x8 |$ x8 | x8 | x8 |] %96

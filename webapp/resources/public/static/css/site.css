@@ -1,0 +1,151 @@
+svg {
+    display: block;
+    /*g:hover path {fill:green;};*/
+}
+
+/*.on {*/
+	/*fill: pink;*/
+	/*stroke: red;*/
+	/*stroke-width: 2;*/
+/*}*/
+
+body {
+    background-color: #555b66;
+    padding-top: 70px;
+}
+
+.container {
+    display: table;
+}
+
+.header {
+    width: 100%;
+    color: #dde;
+    padding: 7px 0 7px 20px;
+    text-align: center;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #3d3f44;
+}
+
+.abc {
+    z-index: 1000;
+    width: 18.15cm;
+    min-height: 600px;
+    background-color: white;
+    border-color: #556;
+    border-width: 3px;
+    border-style: outset;
+    border-radius: 3px;
+    /* display: table-cell; */
+    float: left;
+}
+
+.panel {
+    position: fixed;
+    width: 350px;
+    background-color: #c2d2ff;
+    padding: 14px;
+    border-radius: 10px;
+    /* margin-right: 50px; */
+    /* margin-bottom: 30px; */
+    margin-left: 18.5cm;
+    /* display: table-cell; */
+    /*float: right;*/
+}
+
+#panelTitle {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.attr-names {
+    max-width: 110px;
+    float: left;
+}
+
+.aname {
+    line-height: 28px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 200px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 22px; /* Set a specific slider handle width */
+    height: 12px; /* Slider handle height */
+    background: #b2b2bf; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+    border-radius: 2px;
+}
+
+.slider::-moz-range-thumb {
+    width: 22px; /* Set a specific slider handle width */
+    height: 12px; /* Slider handle height */
+    background: #b2b2bf; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.inputs {
+    float: left;
+}
+
+#apply_button {
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 24.13px;
+    /* position: relative;
+    margin-left: -50px;
+    left: 50%; */
+}
+
+#canvas {
+    z-index: 0;
+    stroke: none;
+}
+
+#canvas {
+    border: 1px solid blue;
+}
+
+.marquee {
+    fill-opacity:0.2;
+    stroke:#000;
+    stroke-dasharray:2,4;
+    vector-effect:non-scaling-stroke; /* not for FF */
+}
+
+
+.measureBoxBorder:hover{
+   /*fill:red;	*/
+    /*-webkit-filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));*/
+
+  /*filter: drop-shadow( 3px 3px 2px rgba(0, 0, 0, .7));*/
+ 	/*clip-path: circle(40%);	*/
+ 	stroke-width:3;
+ 	stroke-opacity:1.0;
+}
+
+#score-name{
+    color: #dde;
+}
