@@ -1,0 +1,4 @@
+webapp/lib/* linguist-vendored
+webapp/resources/public/static/js/abcemb2-1.js linguist-vendored
+webapp/resources/public/static/js/abc2svg-1.js linguist-vendored
+webapp/resources/public/static/js/abc-ui-1.0.0.min.js linguist-vendored
